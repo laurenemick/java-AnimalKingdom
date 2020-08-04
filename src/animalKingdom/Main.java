@@ -57,9 +57,26 @@ public class Main {
 		animalList.add(catfish);
 		animalList.add(perch);
 
+		// System.out.println(animalList);
+
+		System.out.println("\n*** List all the animals in descending order by year named ***");
+		animalList.sort((a1, a2) -> a2.yearNamed - a1.yearNamed); 
+        animalList.forEach((a) -> System.out.println(a));
+
+
         System.out.println("\n*** List all the animals alphabetically ***");
-        animalList.sort((a1, a2) -> a1.getYearNamed().compareToIgnoreCase(a2.getYearNamed())); 
-        animalList.forEach((a) -> System.out.println(a.getYearNamed()));
+        animalList.sort((a1, a2) -> a1.name.compareToIgnoreCase(a2.name)); 
+        animalList.forEach((a) -> System.out.println(a));
+
+        System.out.println("\n*** List all the animals order by how they move ***");
+
+        System.out.println("\n*** List only those animals the breath with lungs ***");
+
+        System.out.println("\n*** List only those animals that breath with lungs and were named in 1758 ***");
+
+        System.out.println("\n*** List only those animals that lay eggs and breath with lungs ***");
+
+        System.out.println("\n*** List alphabetically only those animals that were named in 1758 ***");
 
 	}
 }

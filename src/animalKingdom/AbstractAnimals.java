@@ -38,6 +38,6 @@ abstract class AbstractAnimals {
 	abstract String reproduce();
 
 	public String toString() {
-        return "Animals{" + "id = " + id + ", name = " + name + ", yearNamed = " + yearNamed + '\'' + "}\n";
+        return "Animals{" + "id = " + id + ", name = " + name + ", yearNamed = " + yearNamed + "}\n";
     }
 }
