@@ -92,5 +92,17 @@ public class Main {
         System.out.println("\n*** List alphabetically only those animals that were named in 1758 ***");
         List<AbstractAnimals> filteredByYear = filterAnimals(animalList, a -> a.yearNamed == 1758);
         filteredByYear.forEach((a) -> System.out.println(a));
+
+        //STRETCH
+        System.out.println();
+        System.out.println("\n*** For the list of animals, list alphabetically those animals that are mammals ***");
+        List<AbstractAnimals> filteredByMammal = filterAnimals(animalList, a -> a.reproduce() == "live birth");
+        filteredByMammal.sort((a1, a2) -> a1.name.compareToIgnoreCase(a2.name));
+        filteredByMammal.forEach((a) -> System.out.println(a));
+  
 	}
 }
+
+
+
+
